@@ -1,0 +1,17 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	margin: 0;
+}
+
+.title {
+	text-align: justify;
+	line-height: 100vh;
+	font-family: "Source Sans Pro";
+	font-size: 150px;
+	font-weight: bold;
+}
+
