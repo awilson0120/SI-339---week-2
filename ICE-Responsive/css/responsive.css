@@ -1,0 +1,55 @@
+@media only screen and (min-width: 1000px){
+	img{
+		max-width: 100%;
+	}
+	.flex-container {
+	  padding: 0;
+	  margin: 0;
+	  list-style: none;
+	  display: -webkit-flexbox;
+	  display: flex;
+	  flex-flow: row wrap;
+	}
+
+	.flex-item {
+	  max-height: 25%;
+	}
+
+	.a{
+		width: 48%;
+	}
+
+	.b{
+		width: 48%;
+		
+	}
+
+	.c{
+		width: 23%;
+	}
+
+	.d{
+		width: 23%;
+	}
+
+	.e {
+		width: 48%;
+	}
+
+	.f{
+		width: 48%;
+	}
+
+	.g{
+		width: 48%;
+	}
+}
+
+@media only screen and (min-width: 650px){
+	.top-nav ul li {
+		display: inline-block;
+
+	}
+	img{
+		max-width: 100%;
+	}
