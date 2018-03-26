@@ -1,11 +1,17 @@
+
+img{
+		max-width: 100%; /*prevents items from being oversized*/
+	}
 @media only screen and (min-width: 650px){
+	
+	.top-nav{
+		text-align:center;
+	}
 	.top-nav ul li {
-		display: inline-block;
+		display:inline-block;
 
 	}
-	img{
-		max-width: 100%;
-	}
+	
 
 	.flex-container {
 	  padding: 0;
@@ -53,9 +59,11 @@
 
 
 @media only screen and (min-width: 1000px){
-	img{
-		max-width: 100%;
+	.top-nav ul li {
+		display: inline;
+		float: right;
 	}
+	
 	.flex-container {
 	  padding: 0;
 	  margin: 0;
