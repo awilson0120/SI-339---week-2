@@ -1,18 +1,20 @@
-.footer {
+html body .footer {
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
+    height: 5%;
     background-color: gray;
     color: white;
     text-align: center;
+
 }
 
 nav .navbar{
 	background-color: yellow;
 }
 
-img {
+#profile {
 	border-radius: 50%;
 	display: block;
     margin-left: auto;
@@ -22,18 +24,29 @@ img {
 }
 
 h1{
-	display: inline;
 	text-align: center;
     font-family: 'Playfair Display', serif;
+    padding: 2%;
 	
 }
 
 body{ 
-    background-image: url('../img/IMG_4904.png');
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.5;
+}
 
+body::after {
+  content: "";
+  background: url('../img/IMG_4904.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
 }
 
 .top {
@@ -51,7 +64,44 @@ body{
     padding-top: 2%;
     padding-bottom: 2%;
     font-family: 'Playfair Display', serif;
-    /*background-color: gray;*/
- 
+}
+
+.card{
+    display: inline-block;
+    position: relative;
+    float: left;
+    margin: 2%;
+    width: 250px;
+    height: 225px;
+    background: gray;
+
+    /*background-position: 50% 50%;*/
+    /*background-repeat:   no-repeat;
+    background-size:     cover;*/
+}
+
+.card img{
+    visibility: hidden;
+
+}
+
+
+.card:hover img{
+    visibility: visible;
+    overflow: scroll;
+}
+
+.card:hover h5{
+    visibility: hidden;  
+}
+
+.card:hover p{
+    visibility: hidden;
+}
+
+html body iframe {
+    position: absolute;
+    height: 75%;
+    width: 100%;
 
 }
