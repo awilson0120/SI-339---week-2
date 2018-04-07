@@ -9,9 +9,36 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <title>Alissa Wilson</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $(".b1").click(function(){
+            $(".group1").toggle();
+        });
+    });
+
+    $(document).ready(function(){
+        $(".b2").click(function(){
+            $(".group2").toggle();
+        });
+    });
+
+    $(document).ready(function(){
+        $(".b3").click(function(){
+            $(".group3").toggle();
+        });
+    });
+
+    $('html, body').css({
+    overflow: 'hidden',
+    });
+    </script>
   </head>
+  
   <body>
-    <h1>Alissa Wilson - Projects Page</h1>
+  
+    
+    <!-- <h1>Alissa Wilson - Projects Page</h1> -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -19,18 +46,21 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#"></a>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="#">
+        <img src="img/profile_thumb.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
+        Alissa Wilson 2018
+      </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="index1.html">Home </a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item active">
             <a class="nav-link" href="projects.html">Projects <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
@@ -39,75 +69,78 @@
           <li class="nav-item">
             <a class="nav-link" href="contact.html">Contact Me</a>
           </li>
-          </li>
         </ul>
       </div>
     </nav>
 
-
-
-  <div class="card bg-dark text-white">
-    <img class="card-img" src="img/P1.png">
+  <h1><button class="b1">Graphic Design &darr;</button></h1>
+  <div class="card text-white group1">
+    <img class="card-img" src="img/icons8-leaf-50.png" alt="leaf">
     <div class="card-img-overlay">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <h5 class="card-title">Web Banners</h5>
+      <p class="card-text">Mockups for sustainability-related classes highlighting relevant course information for a website.</p>
+      <a href="img/P1.1.png" class="btn btn-primary" >See image</a>
     </div>
   </div>
 
-  <div class="card bg-dark text-white">
-    <img class="card-img" src="img/P2.png">
+  <div class="card text-white group1">
+    <img class="card-img" src="img/icons8-galaxy-50.png" alt="logo">
     <div class="card-img-overlay">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <h5 class="card-title">Logo Design</h5>
+      <p class="card-text">Design ideas for a logo for a sustainability conference.</p>
+      <a href="img/P2.png" class="btn btn-primary" >See image</a>
     </div>
   </div>
 
-  <div class="card bg-dark text-white">
-    <img class="card-img" src="img/P3.png">
+  <h1><button class="b2">Poster Presentations &darr;</button></h1>
+  <div class="card text-white group2">
+    <img class="card-img" src="img/fundraising.png" alt="fundraising">
     <div class="card-img-overlay">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <h5 class="card-title">OUD Fundraising</h5>
+      <p class="card-text">Model to predict areas of interest for alumni donations, to be more specific than soliciting by degree.</p>
+      <a href="img/P3.png" class="btn btn-primary" >See image</a>
     </div>
   </div>
 
-  <div class="card bg-dark text-white">
-    <img class="card-img" src="img/P4.png">
+  <div class="card text-white group2">
+    <img class="card-img" src="img/train_black.png" alt="train">
     <div class="card-img-overlay">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <h5 class="card-title">Union Pacific</h5>
+      <p class="card-text">Consulted on software options available to decrease demand on technical users.</p>
+      <a href="img/P4.png" class="btn btn-primary" >See image</a>
     </div>
   </div>
 
-  <div class="card bg-dark text-white">
-    <img class="card-img" src="img/P5.png">
+  <div class="card text-white group2">
+    <img class="card-img" src="img/syringe_injection_drug_steroid.png" alt="syringe">
     <div class="card-img-overlay">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <h5 class="card-title">ISR Research</h5>
+      <p class="card-text">Analyzed trends on HbA1c measurements in dried blood spot samples to determine causes of uncharacteristically high recordings.</p>
+      <a href="img/P5.png" class="btn btn-primary" >See image</a>
     </div>
   </div>
 
-  <div class="card bg-dark text-white">
-    <img class="card-img" src="img/P6.png">
+  <h1><button class="b3">Data Visualization &darr;</button></h1>
+
+
+  <div class="card text-white group3">
+    <img class="card-img" src="img/location-alt-256.png" alt="location">
     <div class="card-img-overlay">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <h5 class="card-title">Data Mapping</h5>
+      <p class="card-text">Mapped data relating to terrorist attacks, analyzed trends of where certain types of attacks occur.</p>
+      <a href="img/P7.png" class="btn btn-primary" >See image</a>
     </div>
   </div>
 
-
-  <div class="card bg-dark text-white">
-    <img class="card-img" src="img/P7.png">
-    <div class="card-img-overlay">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-    </div>
-  </div>
   
   <div class="footer">
-      <p>Footer</p>
+      <p>Alissa Wilson Portfolio Site</p>
+      <a href="https://www.linkedin.com/in/alissa-wilson-544276b3/"><img class="footimg" src="img/linkedin.png" alt="linkedin"></a>
+      <a href="https://www.facebook.com/alissa.wilson.12"><img class="footimg" src="img/facebook.png" alt="facebook"></a>
   </div>
-
+  
   </body>
+  
 
 
 
